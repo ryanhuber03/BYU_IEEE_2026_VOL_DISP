@@ -504,7 +504,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "logos"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {

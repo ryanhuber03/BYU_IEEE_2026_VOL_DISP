@@ -4,6 +4,14 @@
 	(generator_version "9.0")
 	(uuid "d0d54ad3-3e11-46e9-b549-306f1d1b0582")
 	(paper "A4")
+	(title_block
+		(title "Volumetric Display")
+		(rev "X0")
+		(company "BYU IEEE Student Branch")
+		(comment 1 "Design: Ryan H.")
+		(comment 2 "Drawn: Ryan H.")
+		(comment 3 "Reviewed: Nathan F.")
+	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
@@ -1945,6 +1953,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "UART PROG. Interface"
+		(exclude_from_sim no)
+		(at 184.658 98.806 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f7dec3e2-49b6-4b6e-b090-80b48c768c95")
+	)
 	(junction
 		(at 76.2 45.72)
 		(diameter 0)
@@ -1970,6 +1988,12 @@
 		(uuid "276f4ce1-56c4-47c1-aeb1-54c7ec1f2473")
 	)
 	(junction
+		(at 148.59 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "353d8db0-c6b4-4251-bd99-69341e6f8f61")
+	)
+	(junction
 		(at 74.93 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1986,12 +2010,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0d12dc2-236c-4116-ae1a-76ed2fe20754")
-	)
-	(junction
-		(at 152.4 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5d2b638-ee8a-44ec-9c1b-4f56a8f4756c")
 	)
 	(junction
 		(at 76.2 59.69)
@@ -2077,7 +2095,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 82.55) (xy 152.4 82.55)
+			(xy 147.32 82.55) (xy 148.59 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2127,7 +2145,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 80.01) (xy 152.4 80.01)
+			(xy 158.75 80.01) (xy 148.59 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2247,6 +2265,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 82.55) (xy 153.67 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58f0995d-e7f3-4bcc-9efe-72967edb2434")
+	)
+	(wire
+		(pts
 			(xy 199.39 69.85) (xy 201.93 69.85)
 		)
 		(stroke
@@ -2307,7 +2335,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 80.01) (xy 152.4 82.55)
+			(xy 148.59 80.01) (xy 148.59 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2695,16 +2723,6 @@
 		)
 		(uuid "f939f405-38e3-4197-91d9-c38cdd9eb260")
 	)
-	(wire
-		(pts
-			(xy 152.4 82.55) (xy 153.67 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb9616bb-1ad8-4d11-b1e0-10e8e5218ed3")
-	)
 	(label "VBUS"
 		(at 77.47 59.69 0)
 		(effects
@@ -3075,7 +3093,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "03778dc1-64a6-4b3e-a419-894f07735674")
 		(property "Reference" "#PWR014"
 			(at 149.86 62.23 0)
@@ -3087,7 +3104,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.4 62.2299 90)
+			(at 153.67 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3209,7 +3226,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "14ff2588-e613-4afd-8da8-136962af577c")
 		(property "Reference" "#PWR07"
 			(at 53.34 109.22 0)
@@ -3221,7 +3237,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 107.95 0)
+			(at 53.34 106.426 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3341,10 +3357,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2b5b078b-5b83-4530-94b8-aad5e203a31f")
 		(property "Reference" "R73"
-			(at 157.48 76.2 90)
+			(at 153.162 81.534 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3352,7 +3367,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 157.48 78.74 90)
+			(at 160.274 81.534 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3409,10 +3424,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3eaa586d-a50b-4c9f-b71b-bbd43a562e52")
 		(property "Reference" "R98"
-			(at 78.74 36.8299 0)
+			(at 77.216 37.084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3421,7 +3435,7 @@
 			)
 		)
 		(property "Value" "50K"
-			(at 78.74 39.3699 0)
+			(at 77.216 38.862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3479,10 +3493,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "50ffa5ba-fb85-49a5-8825-e41296bafd0e")
 		(property "Reference" "R71"
-			(at 162.56 55.88 90)
+			(at 158.496 61.214 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3490,7 +3503,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 162.56 58.42 90)
+			(at 165.354 61.214 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3547,10 +3560,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "52114371-6802-49a1-b500-2ffac2923325")
 		(property "Reference" "R66"
-			(at 88.9 69.8499 0)
+			(at 87.376 70.104 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3559,7 +3571,7 @@
 			)
 		)
 		(property "Value" "5.1K"
-			(at 88.9 72.3899 0)
+			(at 87.376 71.882 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3617,10 +3629,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "551b3314-abfd-4676-bdff-5aad81659b7d")
 		(property "Reference" "U1"
-			(at 184.15 55.88 0)
+			(at 184.15 57.658 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3628,7 +3639,7 @@
 			)
 		)
 		(property "Value" "FT260S-R"
-			(at 184.15 58.42 0)
+			(at 184.15 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3829,10 +3840,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6b4d8626-752d-4456-bf96-6af3b171a332")
 		(property "Reference" "J1"
-			(at 57.15 52.07 0)
+			(at 57.15 54.102 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3840,7 +3850,7 @@
 			)
 		)
 		(property "Value" "USB_C_Receptacle_USB2.0_16P"
-			(at 57.15 54.61 0)
+			(at 57.15 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3942,10 +3952,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "75b8d6f5-bb45-43de-b9fb-d530ef7d4ad4")
 		(property "Reference" "R97"
-			(at 78.74 53.3399 0)
+			(at 77.216 53.594 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3954,7 +3963,7 @@
 			)
 		)
 		(property "Value" "50K"
-			(at 78.74 55.8799 0)
+			(at 77.216 55.372 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4078,10 +4087,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8a77d60e-9e84-4881-8bbe-7e6ceeb1aa70")
 		(property "Reference" "R67"
-			(at 97.79 67.3099 0)
+			(at 96.266 67.564 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4090,7 +4098,7 @@
 			)
 		)
 		(property "Value" "5.1K"
-			(at 97.79 69.8499 0)
+			(at 96.266 69.342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4214,10 +4222,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a4dad459-1b82-4256-adaf-aed0240ca3db")
 		(property "Reference" "R69"
-			(at 142.24 68.58 90)
+			(at 138.176 73.914 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4225,7 +4232,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 142.24 71.12 90)
+			(at 145.034 73.914 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4282,10 +4289,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "aa95fe7c-8acc-4449-bb34-89bbc06a9a7a")
 		(property "Reference" "R68"
-			(at 149.86 66.04 90)
+			(at 145.542 71.374 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4293,7 +4299,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 149.86 68.58 90)
+			(at 152.654 71.374 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4350,10 +4356,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ac9a65c2-2aba-4cea-b9b0-01bcfe990753")
 		(property "Reference" "D65"
-			(at 90.4875 53.34 0)
+			(at 90.17 57.404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4361,7 +4366,7 @@
 			)
 		)
 		(property "Value" "MBR0560"
-			(at 90.4875 55.88 0)
+			(at 90.17 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4484,10 +4489,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b0c22308-b128-4296-80a0-57a42fb16a6e")
 		(property "Reference" "R70"
-			(at 134.62 71.12 90)
+			(at 130.556 76.454 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4495,7 +4499,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 134.62 73.66 90)
+			(at 137.414 76.454 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4618,7 +4622,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d53f9714-55b4-4593-9ccf-c9dd26f55660")
 		(property "Reference" "#PWR08"
 			(at 95.25 83.82 0)
@@ -4630,7 +4633,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 82.55 0)
+			(at 95.25 81.026 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4684,10 +4687,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d9474a97-3588-4130-a0b5-ffdd224fd4ce")
 		(property "Reference" "R72"
-			(at 162.56 73.66 90)
+			(at 158.242 78.994 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4695,7 +4697,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 162.56 76.2 90)
+			(at 165.354 78.994 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4752,7 +4754,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e996173c-ff94-44c3-a1c5-16a956f77aac")
 		(property "Reference" "#PWR037"
 			(at 64.77 34.29 0)
@@ -4764,7 +4765,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 67.31 34.2899 90)
+			(at 68.326 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4813,16 +4814,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 151.13 82.55 270)
+		(at 147.32 82.55 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ef0916a3-f578-4c59-b980-b33fd24115ec")
 		(property "Reference" "#PWR017"
-			(at 144.78 82.55 0)
+			(at 140.97 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4831,7 +4831,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 82.5499 90)
+			(at 144.78 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4840,7 +4840,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 82.55 0)
+			(at 147.32 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4849,7 +4849,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 82.55 0)
+			(at 147.32 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4858,7 +4858,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 151.13 82.55 0)
+			(at 147.32 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)

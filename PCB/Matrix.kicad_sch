@@ -4,6 +4,14 @@
 	(generator_version "9.0")
 	(uuid "53803423-6681-4125-907d-58e0140845f3")
 	(paper "A4")
+	(title_block
+		(title "Volumetric Display")
+		(rev "X0")
+		(company "BYU IEEE Student Branch")
+		(comment 1 "Design: Ryan H.")
+		(comment 2 "Drawn: Ryan H.")
+		(comment 3 "Reviewed: Nathan F.")
+	)
 	(lib_symbols
 		(symbol "Device:LED"
 			(pin_numbers
@@ -634,6 +642,26 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(text_box "10 mA per LED:\n3V3 drive, 2V drop\n1.3V / 10 mA = 130 Ohms"
+		(exclude_from_sim no)
+		(at 144.78 187.96 0)
+		(size 30.48 8.255)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "99374d71-d448-4f2c-a778-51a757147111")
 	)
 	(junction
 		(at 182.88 76.2)
