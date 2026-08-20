@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "7bd694af-37ad-47ba-90df-07da5b1590c2")
 	(paper "A4")
 	(title_block
@@ -27,11 +27,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "0016b390-7284-41aa-9961-3b9273b916e8")
 		(property "Sheetname" "Programming"
 			(at 151.13 69.1384 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41,6 +43,8 @@
 		)
 		(property "Sheetfile" "Programming.kicad_sch"
 			(at 151.13 90.7546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -69,11 +73,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "5e4bfd8d-fef4-4265-ab5a-f3f881a660e5")
 		(property "Sheetname" "STM"
 			(at 120.65 94.5384 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -83,6 +89,8 @@
 		)
 		(property "Sheetfile" "STM.kicad_sch"
 			(at 120.65 116.1546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -111,11 +119,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "6efc68bd-efb7-488b-8ead-8207bf77aceb")
 		(property "Sheetname" "Motor and Hall"
 			(at 120.65 69.1384 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -125,6 +135,8 @@
 		)
 		(property "Sheetfile" "MotorHall.kicad_sch"
 			(at 120.65 90.7546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -153,11 +165,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "ec0828d9-72aa-4779-9326-9301bee8a3bb")
 		(property "Sheetname" "Matrix"
 			(at 151.13 94.5384 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -167,6 +181,8 @@
 		)
 		(property "Sheetfile" "Matrix.kicad_sch"
 			(at 151.13 116.1546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1,0 +1,26 @@
+Designator,Qty,Comment,DNP,Exclude from BOM,Exclude from Board,Footprint,Datasheet,JLCPCB Part #
+"C1,C3",2,0.1uF,,,,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,,C1525
+C2,1,1uF,,,,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,,C52923
+"C4,C6",2,100nF,,,,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,,C1525
+C5,1,4.7uF,,,,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,,C23733
+"C7,C9,C10",3,1uF,,,,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,C15849
+C8,1,0.1uF,,,,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,C14663
+"D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22,D23,D24,D25,D26,D27,D28,D29,D30,D31,D32,D33,D34,D35,D36,D37,D38,D39,D40,D41,D42,D43,D44,D45,D46,D47,D48,D49,D50,D51,D52,D53,D54,D55,D56,D57,D58,D59,D60,D61,D62,D63,D64",64,LED,,,,LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,C2286
+D65,1,MBR0560,,,,Diode_SMD:D_SOD-123,http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf,C150515
+D66,1,1N4148WT,DNP,,,Diode_SMD:D_SOD-323_HandSoldering,https://www.diodes.com/assets/Datasheets/ds30396.pdf,
+J1,1,USB_C_Receptacle_USB2.0_16P,,,,Connector_USB:USB_C_Receptacle_GCT_USB4085,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,C7095263
+"Q1,Q2,Q3,Q4",4,MMFTN620KD,,,,Package_TO_SOT_SMD:SOT-457T,,C5769818
+"R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25,R26,R27,R28,R29,R30,R31,R32,R33,R34,R35,R36,R37,R38,R39,R40,R41,R42,R43,R44,R45,R46,R47,R48,R49,R50,R51,R52,R53,R54,R55,R56,R57,R58,R59,R60,R61,R62,R63,R64",64,130,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,C22797
+R65,1,10K,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,C25804
+"R66,R67",2,5.1K,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,C23186
+"R68,R69,R70,R71,R72,R73",6,0,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,,C17168
+"R74,R75,R76,R77,R78,R79,R80,R81,R82,R83,R84,R85,R86,R87,R88,R89,R90,R91,R92,R93,R94,R95,R96,R101,R102,R103",26,0,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,C21189
+"R97,R98",2,50K,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,C23184
+"R99,R100",2,100K,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,C25803
+R104,1,0,DNP,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,
+U1,1,FT260S-R,,,,Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm,,C3313267
+U2,1,NCP718xSN330,,,,Package_TO_SOT_SMD:SOT-23-5,https://www.onsemi.com/pub/Collateral/NCP718-D.PDF,
+U3,1,STM32G071R8T6,,,,Package_QFP:LQFP-64_10x10mm_P0.5mm,https://www.st.com/resource/en/datasheet/stm32g071rb.pdf,C432214
+U4,1,DRV8311S,,,,Package_DFN_QFN:Texas_RRW0024A_WQFN-24-1EP_3x3mm_P0.4mm_EP1.9x1.9mm,https://www.ti.com/lit/ds/symlink/drv8311.pdf,
+U5,1,DRV5055A1xDBZxQ1,,,,Package_TO_SOT_SMD:SOT-23,https://www.ti.com/lit/ds/symlink/drv5055-q1.pdf,
+U6,1,,DNP,,,Package_TO_SOT_SMD:SOT-23_Handsoldering,,
