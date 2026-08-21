@@ -19,8 +19,8 @@ R65,1,10K,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,C25804
 "R99,R100",2,100K,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,C25803
 R104,1,0,DNP,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,
 U1,1,FT260S-R,,,,Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm,,C3313267
-U2,1,NCP718xSN330,,,,Package_TO_SOT_SMD:SOT-23-5,https://www.onsemi.com/pub/Collateral/NCP718-D.PDF,
+U2,1,NCP718xSN330,,,,Package_TO_SOT_SMD:SOT-23-5,https://www.onsemi.com/pub/Collateral/NCP718-D.PDF,C892795
 U3,1,STM32G071R8T6,,,,Package_QFP:LQFP-64_10x10mm_P0.5mm,https://www.st.com/resource/en/datasheet/stm32g071rb.pdf,C432214
-U4,1,DRV8311S,,,,Package_DFN_QFN:Texas_RRW0024A_WQFN-24-1EP_3x3mm_P0.4mm_EP1.9x1.9mm,https://www.ti.com/lit/ds/symlink/drv8311.pdf,
-U5,1,DRV5055A1xDBZxQ1,,,,Package_TO_SOT_SMD:SOT-23,https://www.ti.com/lit/ds/symlink/drv5055-q1.pdf,
+U4,1,DRV8311S,,,,Package_DFN_QFN:Texas_RRW0024A_WQFN-24-1EP_3x3mm_P0.4mm_EP1.9x1.9mm,https://www.ti.com/lit/ds/symlink/drv8311.pdf,C9900084880
+U5,1,DRV5055A1xDBZxQ1,,,,Package_TO_SOT_SMD:SOT-23,https://www.ti.com/lit/ds/symlink/drv5055-q1.pdf,C962987
 U6,1,,DNP,,,Package_TO_SOT_SMD:SOT-23_Handsoldering,,
