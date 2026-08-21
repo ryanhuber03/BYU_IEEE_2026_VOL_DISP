@@ -88,19 +88,7 @@
           "Connector is fine"
         ],
         [
-          "clearance|137551000|81025000|12760acb-0c95-4495-a625-3265e562666d|0b42c5f9-5459-4f40-a916-af27af029cba",
-          "Connector is fine"
-        ],
-        [
-          "clearance|138401000|81025000|0b42c5f9-5459-4f40-a916-af27af029cba|60a1d228-16bd-415d-b37e-96889372c2a3",
-          "Connector is fine"
-        ],
-        [
           "clearance|139251000|79675000|c9d3c802-6dfe-4ea1-b7d9-13d1dae47b74|ebb18254-d4b2-466b-a7e7-58011ade7d2a",
-          "Connector is fine"
-        ],
-        [
-          "clearance|139251000|81025000|60a1d228-16bd-415d-b37e-96889372c2a3|f07aec3a-aa28-475d-b1b0-e76b7ae36dd5",
           "Connector is fine"
         ]
       ],
@@ -733,7 +721,7 @@
         "uuid": "7bd694af-37ad-47ba-90df-07da5b1590c2"
       }
     ],
-    "used_designators": "FID1-4",
+    "used_designators": "Q5-6,FID1-4,#PWR43-46",
     "variants": []
   },
   "sheets": [
