@@ -1,23 +1,35 @@
 #include <Arduino.h>
 #include "pinout.h"
+#include "STM32_TimerInterrupt.h"
+#include "ImgRender.h"
 
 #define NUM_ROWS 8
 #define NUM_COLS 8
 
-const uint8_t LEDRowDriver[NUM_ROWS] = {PA_15, PC_8 , PB_12, PB_3 , PB_6 , PB_7 , PB_9 , PB_8 };
-const uint8_t LEDColDriver[NUM_COLS] = {PD_0 , PD_2 , PD_8 , PD_9 , PC_7 , PB_15, PB_14, PB_13};
+uint8_t image[8][8];
+
+static uint8_t currFrame = 0;
+
+STM32Timer rowUpdateTimer(TIM1);
+#define ROW_UPDATE_TIMER_US 5000L // 5ms
+STM32Timer frameUpdateTimer(TIM1);
+#define FRAME_UPDATE_TIMER_US (ROW_UPDATE_TIMER_US * 8) // 40ms
+
+void tickImgUpdate();
+void frameUpdate();
 
 
 void setup() {
   Serial.begin(9600);
   Serial.println("Starting VolDisp");
-  for(uint32_t pin = 0; pin < NUM_ROWS; pin++){
-    pinMode(LEDRowDriver[pin], OUTPUT);
-    digitalWrite(LEDRowDriver[pin], pin % 2);
+  initImgRender();
+  loadImage(image);
+  setFrame(currFrame);
+  if (!rowUpdateTimer.attachInterruptInterval(ROW_UPDATE_TIMER_US, tickImgUpdate)) {
+    Serial.println("Failed to set row timer");
   }
-  for(uint32_t pin = 0; pin < NUM_COLS; pin++){
-    pinMode(LEDColDriver[pin], OUTPUT);
-    digitalWrite(LEDColDriver[pin], pin % 2);
+  if (!frameUpdateTimer.attachInterruptInterval(FRAME_UPDATE_TIMER_US, frameUpdate)) {
+    Serial.println("Failed to set frame timer");
   }
   Serial.print("Started VolDisp @ ");
   Serial.print(millis());
@@ -28,3 +40,15 @@ void loop() {
 
 }
 
+void tickImgUpdate(){
+  tickImg();
+}
+
+void frameUpdate(){
+  currFrame++;
+  if(currFrame >= 8){
+    currFrame = 0;
+  }
+  setFrame(currFrame);
+  // TODO: Drive motor
+}
