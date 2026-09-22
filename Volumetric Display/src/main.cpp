@@ -1,10 +1,7 @@
 #include <Arduino.h>
 #include "pinout.h"
-#include "STM32_TimerInterrupt.h"
+#include "STM32TimerInterrupt.h"
 #include "ImgRender.h"
-
-#define NUM_ROWS 8
-#define NUM_COLS 8
 
 uint8_t image[8][8];
 
@@ -23,7 +20,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println("Starting VolDisp");
   initImgRender();
-  loadImage(image);
+  loadImage(image[0]);
   setFrame(currFrame);
   if (!rowUpdateTimer.attachInterruptInterval(ROW_UPDATE_TIMER_US, tickImgUpdate)) {
     Serial.println("Failed to set row timer");

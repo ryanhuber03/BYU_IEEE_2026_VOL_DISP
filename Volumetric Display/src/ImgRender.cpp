@@ -1,6 +1,9 @@
 #include "ImgRender.h"
 #include <Arduino.h>
 
+#define NUM_ROWS 8
+#define NUM_COLS 8
+
 const uint8_t LEDRowDriver[NUM_ROWS] = {PA_15, PC_8 , PB_12, PB_3 , PB_6 , PB_7 , PB_9 , PB_8 };
 const uint8_t LEDColDriver[NUM_COLS] = {PD_0 , PD_2 , PD_8 , PD_9 , PC_7 , PB_15, PB_14, PB_13};
 
