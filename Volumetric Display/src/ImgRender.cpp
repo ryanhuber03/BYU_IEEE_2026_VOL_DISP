@@ -4,8 +4,8 @@
 #define NUM_ROWS 8
 #define NUM_COLS 8
 
-const uint8_t LEDRowDriver[NUM_ROWS] = {PA_15, PC_8 , PB_12, PB_3 , PB_6 , PB_7 , PB_9 , PB_8 };
-const uint8_t LEDColDriver[NUM_COLS] = {PD_0 , PD_2 , PD_8 , PD_9 , PC_7 , PB_15, PB_14, PB_13};
+const uint8_t LEDColDriver[NUM_ROWS] = {PA_15, PC_8 , PB_12, PB_3 , PB_6 , PB_7 , PB_9 , PB_8 };
+const uint8_t LEDRowDriver[NUM_COLS] = {PD_0 , PD_2 , PD_8 , PD_9 , PC_7 , PB_15, PB_14, PB_13};
 
 static uint8_t* imgBuffer;
 static uint8_t frame = 0;
@@ -24,6 +24,7 @@ void initImgRender(){
         pinMode(LEDColDriver[pin], OUTPUT);
         digitalWrite(LEDColDriver[pin], LOW);
     }
+    tickImg();
 }
 
 void setFrame(uint8_t frame){
@@ -33,13 +34,15 @@ void setFrame(uint8_t frame){
 
 void tickImg(){
     for(uint32_t pin = 0; pin < NUM_ROWS; pin++){
-        digitalWrite(LEDRowDriver[pin], pin % 2);
+        // digitalWrite(LEDRowDriver[pin], pin % 2);
+        digitalWrite(LEDRowDriver[pin], ((pin == row) ? HIGH : LOW));
     }
     for(uint32_t pin = 0; pin < NUM_COLS; pin++){
-        digitalWrite(LEDColDriver[pin], pin % 2);
+        digitalWrite(LEDColDriver[pin], pin %2);
     }
+
     row += 1;
-    if(row >= 8){
+    if(row >= NUM_ROWS){
         row = 0;
     }
 }
