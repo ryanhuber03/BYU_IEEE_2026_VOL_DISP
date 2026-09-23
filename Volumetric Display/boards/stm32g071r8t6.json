@@ -1,0 +1,26 @@
+{
+  "build": {
+    "cpu": "cortex-m0plus",
+    "extra_flags": "-DSTM32G0xx -DSTM32G071xx",
+    "f_cpu": "24000000L",
+    "framework_extra_flags": {
+      "arduino": "-D__CORTEX_SC=0"
+    },
+    "mcu": "stm32g071r8t6",
+    "variant": "STM32G071R8T6"
+  },
+  "debug": {
+    "openocd_target": "stm32g0x",
+    "jlink_device": "STM32G071R8"
+  },
+  "frameworks": ["arduino", "stm32cube"],
+  "name": "STM32G071R8T6 Custom",
+  "upload": {
+    "maximum_ram_size": 36864,
+    "maximum_size": 131072,
+    "protocol": "stlink",
+    "protocols": ["stlink", "blackmagic", "jlink", "cmsis-dap"]
+  },
+  "url": "",
+  "vendor": "ST"
+}   

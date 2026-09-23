@@ -4,7 +4,7 @@
 #include "ImgRender.h"
 #include <SoftwareSerial.h>
 
-SoftwareSerial ftdiSerial(PC_11, PC_10);
+SoftwareSerial ftdiSerial(PC_10, PC_11);
 
 uint8_t image[8][8];
 
@@ -20,8 +20,8 @@ void frameUpdate();
 
 
 void setup() {
-  Serial.begin(9600);
-  ftdiSerial.begin(9600);
+  Serial.begin(115200);
+  ftdiSerial.begin(115200);
 
   Serial.println("Starting VolDisp");
   ftdiSerial.println("Starting VolDisp");
