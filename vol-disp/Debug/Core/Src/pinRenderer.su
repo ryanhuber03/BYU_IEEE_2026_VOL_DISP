@@ -1,0 +1,5 @@
+../Core/Src/pinRenderer.c:24:6:loadImage	16	static
+../Core/Src/pinRenderer.c:28:6:initImgRender	8	static
+../Core/Src/pinRenderer.c:32:6:setFrame	16	static
+../Core/Src/pinRenderer.c:37:6:tickImg	16	static
+../Core/Src/pinRenderer.c:57:6:incFrame	8	static

@@ -1,0 +1,5 @@
+../Core/Src/pinRenderer.c:24:6:loadImage	1
+../Core/Src/pinRenderer.c:28:6:initImgRender	1
+../Core/Src/pinRenderer.c:32:6:setFrame	1
+../Core/Src/pinRenderer.c:37:6:tickImg	4
+../Core/Src/pinRenderer.c:57:6:incFrame	2
