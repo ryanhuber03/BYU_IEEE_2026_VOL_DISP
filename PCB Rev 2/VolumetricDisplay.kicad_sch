@@ -1,0 +1,207 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "7bd694af-37ad-47ba-90df-07da5b1590c2")
+	(paper "A4")
+	(title_block
+		(title "Volumetric Display")
+		(date "2026-08-11")
+		(rev "X0")
+		(company "BYU IEEE Student Branch")
+		(comment 1 "Design: Ryan H.")
+		(comment 2 "Drawn: Ryan H.")
+		(comment 3 "Reviewed: Nathan F.")
+	)
+	(lib_symbols)
+	(sheet
+		(at 151.13 69.85)
+		(size 27.94 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0016b390-7284-41aa-9961-3b9273b916e8")
+		(property "Sheetname" "Programming"
+			(at 151.13 69.1384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Programming.kicad_sch"
+			(at 151.13 90.7546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "VolumetricDisplay"
+				(path "/7bd694af-37ad-47ba-90df-07da5b1590c2"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 120.65 95.25)
+		(size 27.94 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5e4bfd8d-fef4-4265-ab5a-f3f881a660e5")
+		(property "Sheetname" "STM"
+			(at 120.65 94.5384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "STM.kicad_sch"
+			(at 120.65 116.1546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "VolumetricDisplay"
+				(path "/7bd694af-37ad-47ba-90df-07da5b1590c2"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 120.65 69.85)
+		(size 27.94 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6efc68bd-efb7-488b-8ead-8207bf77aceb")
+		(property "Sheetname" "Motor and Hall"
+			(at 120.65 69.1384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MotorHall.kicad_sch"
+			(at 120.65 90.7546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "VolumetricDisplay"
+				(path "/7bd694af-37ad-47ba-90df-07da5b1590c2"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 151.13 95.25)
+		(size 27.94 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ec0828d9-72aa-4779-9326-9301bee8a3bb")
+		(property "Sheetname" "Matrix"
+			(at 151.13 94.5384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Matrix.kicad_sch"
+			(at 151.13 116.1546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "VolumetricDisplay"
+				(path "/7bd694af-37ad-47ba-90df-07da5b1590c2"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
