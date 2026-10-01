@@ -69,29 +69,14 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        [
-          "clearance|134151000|79675000|292c6f01-c2a2-4d7c-a9e7-d42abaa2bac0|5d17f4fe-21cf-4978-b09e-ec437de81e98",
-          "Connector is fine"
-        ],
-        [
-          "clearance|134151000|81025000|90dea6f4-1478-40bb-9bd3-17cc4113b6be|95d4a23f-80df-4a2f-aa6b-2aaea837cae5",
-          "Connector is fine"
-        ],
-        [
-          "clearance|136701000|81025000|e7fedc8b-39c9-42ea-8ac6-054c3e50cd02|12760acb-0c95-4495-a625-3265e562666d",
-          "Connector is fine"
-        ],
-        [
-          "clearance|137551000|79675000|7b88a436-b002-4423-9e32-d52ec5295cb7|b14c4d30-59a6-4b1c-9e81-fee164e27c1f",
-          "Connector is fine"
-        ],
-        [
-          "clearance|139251000|79675000|c9d3c802-6dfe-4ea1-b7d9-13d1dae47b74|ebb18254-d4b2-466b-a7e7-58011ade7d2a",
-          "Connector is fine"
-        ]
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
       ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -224,7 +209,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -251,7 +238,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -702,7 +694,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "kicad-embed://IEEE Student branch Sheet Template.kicad_wks",
     "plot_directory": "",
     "reuse_designators": true,
     "space_save_all_events": true,

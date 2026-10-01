@@ -11,6 +11,7 @@
 		(comment 1 "Design: Ryan H.")
 		(comment 2 "Drawn: Ryan H.")
 		(comment 3 "Reviewed: Nathan F.")
+		(comment 4 "Revised: Nathan F.")
 	)
 	(lib_symbols
 		(symbol "Device:LED"
