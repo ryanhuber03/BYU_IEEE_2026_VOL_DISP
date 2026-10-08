@@ -1,0 +1,8 @@
+# don't include lock files
+*.lck
+
+# don't include Kicad's auto-generated backups folder
+*/*-backups/*
+
+# don't include Inventor's OldVersions folder
+*/OldVersions/*
