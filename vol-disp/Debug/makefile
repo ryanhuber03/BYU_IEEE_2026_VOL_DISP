@@ -60,8 +60,8 @@ all: main-build
 main-build: vol-disp.elf secondary-outputs
 
 # Tool invocations
-vol-disp.elf vol-disp.map: $(OBJS) $(USER_OBJS) C:\Users\InventorKid\STM32CubeIDE\workspace_2.2.0\vol-disp\STM32G071R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "vol-disp.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\InventorKid\STM32CubeIDE\workspace_2.2.0\vol-disp\STM32G071R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="vol-disp.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+vol-disp.elf vol-disp.map: $(OBJS) $(USER_OBJS) C:\Users\swimn\OneDrive\Documents\College\IEEE\BYU_IEEE_2026_VOL_DISP\vol-disp\STM32G071R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "vol-disp.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\swimn\OneDrive\Documents\College\IEEE\BYU_IEEE_2026_VOL_DISP\vol-disp\STM32G071R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="vol-disp.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

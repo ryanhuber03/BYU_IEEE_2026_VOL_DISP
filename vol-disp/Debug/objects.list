@@ -1,5 +1,6 @@
 "./Core/Src/img.o"
 "./Core/Src/main.o"
+"./Core/Src/motorDriver.o"
 "./Core/Src/pinDriver.o"
 "./Core/Src/pinRenderer.o"
 "./Core/Src/stm32g0xx_hal_msp.o"

@@ -35,7 +35,7 @@ void GPIO_Outputs_Init(void)
 
     gpio.Mode  = GPIO_MODE_OUTPUT_PP;   // push-pull output
     gpio.Pull  = GPIO_NOPULL;
-    gpio.Speed = GPIO_SPEED_FREQ_LOW;
+    gpio.Speed = GPIO_SPEED_FREQ_HIGH;
 
     for(uint8_t pin = 0; pin < 16; pin++){
 		gpio.Pin = LEDsGPIOMatrixPin[pin]; // LED0

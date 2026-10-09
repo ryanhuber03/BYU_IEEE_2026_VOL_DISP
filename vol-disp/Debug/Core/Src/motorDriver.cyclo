@@ -1,0 +1,2 @@
+../Core/Src/motorDriver.c:23:6:motorInit	3
+../Core/Src/motorDriver.c:45:6:incMotor	6

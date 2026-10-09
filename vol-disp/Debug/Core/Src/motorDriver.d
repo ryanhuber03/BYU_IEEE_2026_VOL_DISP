@@ -1,6 +1,6 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Src/pinDriver.h \
- ../Core/Src/pinRenderer.h ../Core/Src/motorDriver.h ../Core/Src/img.h \
- ../Core/Inc/main.h ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h \
+Core/Src/motorDriver.o: ../Core/Src/motorDriver.c \
+ ../Core/Src/motorDriver.h ../Core/Inc/main.h \
+ ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h \
  ../Core/Inc/stm32g0xx_hal_conf.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h \
@@ -29,10 +29,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Src/pinDriver.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h
-../Core/Src/pinDriver.h:
-../Core/Src/pinRenderer.h:
 ../Core/Src/motorDriver.h:
-../Core/Src/img.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:
 ../Core/Inc/stm32g0xx_hal_conf.h:
