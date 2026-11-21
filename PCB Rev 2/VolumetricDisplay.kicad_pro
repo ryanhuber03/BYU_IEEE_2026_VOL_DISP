@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.25,
+          "min_clearance": 0.175,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -175,10 +175,6 @@
         ],
         [
           "silk_edge_clearance|141170000|75000000|d29c7c97-01d6-4538-ab4e-7b0c4d7f424f|6b2011d6-d7fb-410a-89f7-4ecfe7cc0205",
-          "I don't care"
-        ],
-        [
-          "silk_overlap|125277134|98223475|2b2e2987-308f-4465-aaf2-85d601a63d26|38179423-57b7-4960-bbd9-b205041c41d0",
           "I don't care"
         ]
       ],
@@ -358,7 +354,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "X0"
+      "sch_revision": "A1"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -618,9 +614,9 @@
       {
         "bus_width": 12,
         "clearance": 0.15,
-        "diff_pair_gap": 0.25,
+        "diff_pair_gap": 0.15,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.2205,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -654,7 +650,7 @@
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "kicad-embed://IEEE Student branch Sheet Template.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -818,7 +814,7 @@
         "uuid": "7bd694af-37ad-47ba-90df-07da5b1590c2"
       }
     ],
-    "used_designators": "#PWR10-11,#PWR24,#PWR27,R68-69,SW1-2,SW4-5",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
